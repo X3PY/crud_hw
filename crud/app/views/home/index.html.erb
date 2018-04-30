@@ -1,0 +1,18 @@
+<h1>영화 감상평</h1>
+
+<a href="/home/new">감상평 쓰러가기</a>
+
+<br>
+
+<%@posts.each do |x| %><br>  
+    <%=x.id%>번째 감상평<br>
+    제목: <%=x.title%><br>
+    <a href="home/show/<%=x.id%>">읽어보기</a>
+    <br>
+    <a href="home/destroy/<%=x.id%>">지우기</a>
+    <br>
+    <a href="home/edit/<%=x.id%>">다시쓰기</a>
+    <br>
+    -----------------------<br>
+<%end%>
+

@@ -1,0 +1,7 @@
+<h1>감상평을 수정하기 위한 페이지입니다.</h1>
+<p>수정을 마치고 저장을 해주세요!</p>
+<form action="/home/update/<%=@post.id%>" method="post">
+  제목: <input type="text" name="title" value="<%=@post.title%>"><br>
+  내용: <input type="text" name="content" value="<%=@post.content%>"><br>
+  <input type="submit" value="저장">
+</form>
